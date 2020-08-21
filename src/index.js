@@ -3,8 +3,9 @@
 // El comcepto de estado: Es el valor del componente en algun momento del tiempo
 import React from "react";
 import ReactDoom from "react-dom"
-import PrimeraApp from "./PrimeraApp";
+// import PrimeraApp from "./PrimeraApp";
 import "./index.css";
+import CounterApp from "./CounterApp";
 
 // Variable que es renderizada en elemento de public
 
@@ -20,4 +21,4 @@ import "./index.css";
 
 const divRoot = document.querySelector("#root")
 
-ReactDoom.render(<PrimeraApp /> , divRoot);
+ReactDoom.render(<CounterApp value = { 0 }/> , divRoot);
